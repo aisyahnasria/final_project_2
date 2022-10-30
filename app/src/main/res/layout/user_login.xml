@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/judul_user_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER LOGIN"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="58dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/purple_700"
+        android:paddingHorizontal="20dp"
+        />
+
+    <EditText
+        android:id="@+id/user_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Enter Username"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/user_pswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/user_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login" />
+
+
+</LinearLayout>

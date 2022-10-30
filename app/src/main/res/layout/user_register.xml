@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal"
+    android:padding="30dp"
+    >
+
+    <TextView
+        android:id="@+id/judul_user_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER REGISTER"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="58dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/purple_700"
+        android:paddingHorizontal="20dp"
+        />
+
+    <EditText
+        android:id="@+id/user_regist_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Username"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/user_no_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter No Phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/user_regist_pswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/user_regist_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create account" />
+
+
+</LinearLayout>

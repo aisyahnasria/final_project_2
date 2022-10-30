@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/judul_admin_add_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD STOCK"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="58dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/purple_700"
+        android:paddingHorizontal="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/item_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Item ID"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/item_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="30dp"
+        android:inputType="textMultiLine"
+        android:hint="Enter Item Quantity"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add stock" />
+</LinearLayout>
