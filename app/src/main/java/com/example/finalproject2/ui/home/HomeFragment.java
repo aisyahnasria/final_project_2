@@ -45,14 +45,22 @@ public class HomeFragment extends Fragment {
         book.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(context, ProductsDetails.class));
+
+                startActivity(new Intent(context, ProductsDetails.class));
+
             }
         });
 
         electronic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(context, ProductsDetails.class));
+
+                startActivity(new Intent(context, About.class));
+
             }
         });
 
@@ -60,6 +68,8 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(context, ProductsDetails.class));
+                startActivity(new Intent(context, About.class));
+
             }
         });
 
