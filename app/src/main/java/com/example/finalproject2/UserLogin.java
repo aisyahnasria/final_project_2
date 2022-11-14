@@ -21,6 +21,7 @@ public class UserLogin extends AppCompatActivity implements View.OnClickListener
     private Button loginButton;
     private FirebaseFirestore db;
     private String email, password;
+
     protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_login);
@@ -66,7 +67,7 @@ public class UserLogin extends AppCompatActivity implements View.OnClickListener
 
                         if (a.equalsIgnoreCase(a1) & b.equalsIgnoreCase(b1)) {
                             Toast.makeText(getApplicationContext(), "Logged In", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), About.class));
+                            startActivity(new Intent(getApplicationContext(), MenuHome.class));
                         }
                         else {
                             Toast.makeText(getApplicationContext(), "Incorrect Email or Password", Toast.LENGTH_SHORT).show();
