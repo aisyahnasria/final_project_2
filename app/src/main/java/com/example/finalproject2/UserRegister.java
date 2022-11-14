@@ -71,7 +71,7 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Data Staff berhasil dibuat", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), AdminPage.class));
+                    startActivity(new Intent(getApplicationContext(), MenuHome.class));
                     addUser(email, password, phone);
                     finish();
                 } else {

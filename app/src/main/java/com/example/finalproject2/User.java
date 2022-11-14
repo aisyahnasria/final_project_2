@@ -3,18 +3,7 @@ package com.example.finalproject2;
 public class User {
     public String email;
     public String password;
-    public String noPhone;
-
-    public User(String email, String password, String noPhone) {
-        this.email = email;
-        this.password = password;
-        this.noPhone = noPhone;
-    }
-
-    public User(){
-
-    }
-
+    public String phone;
 
     public String getEmail() {
         return email;
@@ -32,12 +21,25 @@ public class User {
         this.password = password;
     }
 
-    public String getNoPhone() {
-        return noPhone;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setNoPhone(String noPhone) {
-        this.noPhone = noPhone;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
+    public User(String email, String password, String phone) {
+        this.email = email;
+        this.password = password;
+        this.phone = phone;
+    }
 }
+
+
+
+
+
+
+
+
