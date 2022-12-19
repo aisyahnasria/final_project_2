@@ -28,7 +28,7 @@ public class MenuHome extends AppCompatActivity {
         binding = ActivityMenuHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.appBarMenuHome.toolbar);
+        //setSupportActionBar(binding.appBarMenuHome.toolbar);
         binding.appBarMenuHome.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

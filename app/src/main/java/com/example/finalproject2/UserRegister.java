@@ -70,12 +70,12 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    Toast.makeText(getApplicationContext(), "Data Staff berhasil dibuat", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Data User berhasil dibuat", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), MenuHome.class));
                     addUser(email, password, phone);
                     finish();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Data Staff gagal dibuat", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Data User gagal dibuat", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -96,7 +96,7 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getApplicationContext(),"Failed to register yout account", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Failed to register your account", Toast.LENGTH_SHORT).show();
             }
         });
     }

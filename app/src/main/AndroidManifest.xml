@@ -31,6 +31,9 @@
         <activity android:name=".AdminPage"></activity>
         <activity android:name=".AdminAddStaff"></activity>
         <activity android:name=".AdminAddStock"></activity>
+        <activity android:name=".MenuHome"/>
+        <activity android:name=".ProductsDetails"/>
+
     </application>
 
 </manifest>
